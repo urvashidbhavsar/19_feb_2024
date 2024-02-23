@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        table = collection of row and columns
+        cell = it is generate from row and columns 
+    
+        for create table => <table>
+        for create a row => <tr> table row 
+        for create column/data => <td> table data 
+        for set table heading column => <th> table heading 
+        for set table title => <caption>
+        for set table body => <tbody>
+        for set table footer => <tfoot>
+
+        cellpadding => provide a space between content and cell border
+        cellspacing => provide a space between cells
+        when we set rules cellspacing not effected
+     -->
+    <table border="1" style="width: 500px; text-align: center;" cellpadding="5px" cellspacing="10px" rules="all">
+        <caption>My table data</caption>
+        <tr>
+            <th>No</th>
+            <th>Full name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve jobs</td>
+                <td>founder apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>founder google</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuker.</td>
+                <td>founder Facebook</td>
+                <td>$1200</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td>5</td>
+            </tr>
+        </tfoot> -->
+    </table>
+</body>
+
+</html>
