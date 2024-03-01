@@ -1,0 +1,29 @@
+types / ways to add css in html file :
+(1) inline  => using style attribute in an element
+(2) internal => using <style> tag in <head> or <body>
+(3) external  => create an external file and attach with <link> tag.
+
+
+syntax / rules of css: 
+inline 
+    style = "property:value;"
+
+internal / external 
+
+    selector{
+        property:value;
+    }
+
+selector : 
+(1) element selector
+(2) id selector
+(3) class selector
+(4) group selector 
+(5) universal/global selector 
+(6) attribute selector 
+(7) combinator / decendent selector 
+
+
+
+
+
