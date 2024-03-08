@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo element start with :: symbol */
+        h1::after {
+            content: "\263A";
+        }
+
+        h1::before {
+            content: "\263A";
+        }
+
+        .mydiv {
+            height: auto;
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .mydiv::first-line {
+            color: blue;
+        }
+
+        .mydiv::first-letter {
+            font-size: 40px;
+        }
+
+        .mydiv::selection {
+            background-color: black;
+            color: white;
+        }
+
+        li::marker {
+            color: green;
+            font-size: 24px;
+        }
+
+        input::placeholder {
+            font-size: 12px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit fugit sunt laborum distinctio eum
+        tempora molestiae repellendus itaque aut deserunt molestias officia illum ipsum, officiis voluptate amet soluta
+        sit!
+    </div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+
+    Enter Name : <input type="text" placeholder="Enter Name">
+</body>
+
+</html>
