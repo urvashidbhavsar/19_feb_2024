@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* select first siblings */
+        .mydiv~.para {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+    </div>
+
+    <p class="para">paragraph3</p>
+    <p class="para">paragraph4</p>
+
+    <hr>
+    <div class="mydiv">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+    </div>
+
+    <p class="para">paragraph3</p>
+    <p class="para">paragraph4</p>
+</body>
+
+</html>
