@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 2px solid black;
+            display: flex;
+
+            /* flex-direction: row; => default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap=> default; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: row-reverse wrap;
+        }
+
+        .main div {
+            height: 100px;
+            width: 50%;
+            font-size: 30px;
+        }
+
+        .div1 {
+            background-color: chocolate;
+        }
+
+        .div2 {
+            background-color: cadetblue;
+        }
+
+        .div3 {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+    </div>
+</body>
+
+</html>

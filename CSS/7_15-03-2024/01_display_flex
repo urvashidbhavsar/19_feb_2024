@@ -1,0 +1,18 @@
+flex means set values/element flexibly in a row.
+
+list of property which is only effected while appling display flex.
+
+(1) flex-grow (child)
+(2) flex-shrink (child)
+(3) flex-basis (child)
+(4) flex (child)
+(5) flex-direction 
+(6) flex-wrap 
+(7) flex-flow 
+(8) gap  (row-gap, column-gap)
+(9) justify-content 
+(10) align-items 
+(11) align-content 
+(12) order 
+
+inline-flex depends on element content. because it cant efffected element width.

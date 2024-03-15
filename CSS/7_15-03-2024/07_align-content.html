@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* effect only top and bottom */
+            align-items: center;
+            /* property effect when we apply flex-wrap */
+            align-content: center;
+        }
+
+        .div {
+            height: 150px;
+            width: 150px;
+            background-color: teal;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div">1</div>
+        <div class="div">2</div>
+        <div class="div">3</div>
+    </div>
+</body>
+
+</html>
