@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .icon {
+            margin: auto;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            display: grid;
+
+            /* short hand => justify-content and align-content */
+            /* if we apply flex only jusfity-content effected, for align-content use flex-wrap property also */
+            /* place-content: center; */
+
+            /* short hand => justify-items and align-items */
+            /* if we apply flex only align-items effected, for justify-items apply grid */
+            place-items: center;
+        }
+
+        .material-symbols-outlined {
+            font-size: 40px;
+
+            /* short hand => justify-self and align-self */
+            /* when we set flex only align-self effected, for justify-self apply grid */
+            place-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <span class="material-symbols-outlined">
+            star
+        </span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+display grid provide tabular form data.
+
+list of property which is only effected while appling grid 
+(1) grid-template-rows 
+(2) grid-template-columns 
+(3) gap (row-gap, column-gap)
+(4) justify-items 
+(5) align-items 
+(6) align-content 
+(7) grid-row (grid-row-start, grid-row-end) child class 
+(8) grid-column (grid-column-start, grid-column-end) child class 
+(9) grid-area 
+(10) grid-template-areas
+
+flex 
+(1) align-items
+(2) align-content 
+(3) align-self 
+(4) justify-content 
+
+grid 
+(1) align-items
+(2) align-content 
+(3) align-self 
+(4) justify-content 
+(5) justify-items 
+(6) justify-self 

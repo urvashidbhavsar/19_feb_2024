@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .gallery {
+            padding: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* .img1,
+        .img3 {
+            border: 1px solid black;
+        } */
+
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .img2 {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="img1">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/01-06-2021/photogenic-liberty-demo_Free/812494057/web/assets/images/g1.jpg"
+                alt="">
+        </div>
+        <div class="img2">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/01-06-2021/photogenic-liberty-demo_Free/812494057/web/assets/images/g3.jpg"
+                alt="">
+        </div>
+        <div class="img3">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/01-06-2021/photogenic-liberty-demo_Free/812494057/web/assets/images/g5.jpg"
+                alt="">
+        </div>
+        <div class="img4">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/01-06-2021/photogenic-liberty-demo_Free/812494057/web/assets/images/g2.jpg"
+                alt="">
+        </div>
+        <div class="img5">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/01-06-2021/photogenic-liberty-demo_Free/812494057/web/assets/images/g4.jpg"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>
