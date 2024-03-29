@@ -1,0 +1,24 @@
+(1) rotation of element
+rotate(), rotateX(), rotateY(), rotateZ(), rotate3d()
+property : rotate
+
+(2) zooming in out of element
+scale(), scaleX(), scaleY(), scaleZ(), scale3d()
+property : scale
+
+(3) strecthing type effect
+skew(), skewX(), skewY()
+
+(4) element movement effect
+translate(), translateX(), translateY(), translateZ(), translate3d()
+property : translate
+
+(5) matrix
+matrix(), matrix3d()
+
+(6) for view of element
+perspective()
+property : perspective
+
+for matrix3d
+https://ramlmn.github.io/visualizing-matrix3d/
