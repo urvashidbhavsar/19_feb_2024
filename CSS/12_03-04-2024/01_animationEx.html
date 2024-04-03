@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: #232323;
+        }
+
+        .mydiv {
+            margin: 30px;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            background-color: #09419b;
+            border: 1px solid #09419b;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 3px rgb(34, 34, 34);
+            animation: movebtn 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        /* .btn:hover {
+            animation: movebtn 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+        } */
+
+        .shadow {
+            height: 30px;
+            width: 127px;
+            background-color: #3c3c3c;
+            border-radius: 50%;
+            transform: rotateX(100deg) translateY(58px);
+            animation: movediv 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+        }
+
+
+        @keyframes movebtn {
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes movediv {
+            0% {
+                scale: 0.5;
+                opacity: 0.3;
+            }
+
+            100% {
+                scale: 1;
+                opacity: 0.8;
+            }
+        }
+
+        h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .head1 {
+            animation: fadeInLeft;
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <button class="btn">click here</button>
+        <div class="shadow"></div>
+    </div>
+
+    <!-- animate.style -->
+    <h1 class="head animate__animated animate__shakeX">my text</h1>
+    <h1 class="head1">my text</h1>
+
+</body>
+
+</html>
