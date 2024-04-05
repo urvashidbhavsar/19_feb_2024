@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-scale {
+            height: auto;
+            width: 400px;
+            border: 2px solid black;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            transition: 0.5s ease-in-out;
+        }
+
+        .image-scale:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-scale">
+        <img src="https://i.pinimg.com/736x/ed/78/11/ed78116c19573356cd2519cf1f4e73d7.jpg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-overlay {
+            width: 400px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .text {
+            position: absolute;
+            /* depend on height */
+            /* top: 0; */
+            bottom: 0;
+            /* depend on width */
+            left: 0;
+            right: 0;
+            color: white;
+            background-color: black;
+            display: grid;
+            place-content: center;
+            height: 0;
+            width: 100%;
+            overflow: hidden;
+            transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .image-overlay:hover .text {
+            height: 50%;
+            /* width: 100%; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-overlay">
+        <div>
+            <img src="https://i.pinimg.com/736x/ed/78/11/ed78116c19573356cd2519cf1f4e73d7.jpg" alt="">
+        </div>
+        <div class="text">
+            <div>
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

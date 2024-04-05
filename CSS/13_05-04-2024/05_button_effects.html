@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: auto auto auto; */
+            padding: 50px;
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .btn {
+            padding: 7px 17px;
+            background-color: transparent;
+            border: 2px solid #d71347;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            transition: 0.4s ease background-color;
+        }
+
+        .btn1:hover {
+            background-color: #d71347;
+            color: white;
+        }
+
+        .btn2:active {
+            scale: 0.9;
+        }
+
+        .btn2:focus {
+            box-shadow: 0px 0px 4px 4px #d71347;
+        }
+
+        .btn3:hover {
+            border: 2px groove blue;
+        }
+
+        .btn4:hover {
+            border-left: 5px solid #d71347;
+            border-right: 5px solid #d71347;
+        }
+
+        a {
+            color: #d71347;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .btn5 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn5::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #d71347;
+            z-index: -1;
+            transform: scale(0);
+            /* transform-origin: left; */
+            transform-origin: 0% 0%;
+            transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+
+        .btn5:hover::after {
+            transform: scale(1);
+        }
+
+        .btn5:hover a {
+            color: white;
+            transition-delay: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>
+            <button class="btn btn1">click here</button>
+        </div>
+        <div>
+            <button class="btn btn2">click here</button>
+        </div>
+        <div>
+            <button class="btn btn3">click here</button>
+        </div>
+        <div>
+            <button class="btn btn4">click here</button>
+        </div>
+        <div>
+            <div class="btn btn5" role="button">
+                <a href="">Click Here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

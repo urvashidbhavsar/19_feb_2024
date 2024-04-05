@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-overlay {
+            width: 400px;
+            border: 2px solid black;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            display: grid;
+            justify-items: flex-start;
+            align-items: flex-end;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+            /* scale: 0; */
+            transform: scale(1);
+        }
+
+        .image-overlay:hover .text {
+            /* scale: 1; */
+            /* transform: scale(1) rotate(360deg); */
+            background-color: rgba(0, 0, 0, 0.854);
+
+        }
+
+        .delay {
+            padding: 40px;
+            /* scale(0)  */
+            transform: translateY(300px);
+            transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .image-overlay:hover .delay {
+            /*  scale(1)  */
+            transform: translateY(0px);
+            transition-delay: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-overlay">
+        <div>
+            <img src="https://i.pinimg.com/736x/ed/78/11/ed78116c19573356cd2519cf1f4e73d7.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="delay">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
