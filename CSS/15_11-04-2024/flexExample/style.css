@@ -1,0 +1,128 @@
+/* set compulsory */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.space-lr {
+    margin-left : 70px;
+    margin-right: 70px;
+}
+
+.padd-tb {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+}
+
+.FlexExample .web-content {
+    display    : flex;
+    gap        : 30px;
+    align-items: center;
+}
+
+.FlexExample .web-content .leftimg {
+    flex: 1;
+}
+
+.FlexExample .web-content img {
+    height   : auto;
+    max-width: 100%;
+}
+
+.FlexExample .web-content .web-text {
+    flex: 1;
+}
+
+.FlexExample .web-content .web-text h1 {
+    font-size     : calc(1.5vw + 24px);
+    padding-bottom: 14px;
+}
+
+.FlexExample .web-content .web-text p {
+    padding-bottom: 14px;
+    letter-spacing: 1px;
+    color         : gray;
+}
+
+.FlexExample .web-content .web-text .video-play {
+    display    : flex;
+    gap        : 20px;
+    margin-top : 30px;
+    align-items: center;
+}
+
+.FlexExample .web-content .web-text .video-play .icon {
+    height       : 40px;
+    width        : 40px;
+    border       : 2px solid gray;
+    border-radius: 50%;
+    display      : grid;
+    place-content: center;
+    color        : teal;
+    transition   : 0.5s ease;
+    cursor       : pointer;
+}
+
+.FlexExample .web-content .web-text .video-play .icon:hover {
+    border   : 2px solid black;
+    color    : black;
+    transform: scale(1.1);
+}
+
+.FlexExample .web-content .web-text .video-play a {
+    text-decoration: none;
+    font-size      : 20px;
+    text-transform : uppercase;
+    color          : teal;
+    font-weight    : bold;
+}
+
+/* apply media query */
+@media (max-width:576px) {
+    .space-lr {
+        margin-left : 20px;
+        margin-right: 20px;
+    }
+
+    .FlexExample .web-content {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:576px) {
+    .space-lr {
+        margin-left : 40px;
+        margin-right: 40px;
+    }
+
+    .FlexExample .web-content {
+        flex-direction: column;
+    }
+}
+
+/* @media (min-width:768px) {
+    .space-lr {
+        margin-left : 55px;
+        margin-right: 55px;
+    }
+
+    .FlexExample .web-content {
+        flex-direction: row;
+    }
+} */
+
+@media (min-width:992px) {
+    .space-lr {
+        margin-left : 70px;
+        margin-right: 70px;
+    }
+
+    .FlexExample .web-content {
+        flex-direction: row;
+    }
+}

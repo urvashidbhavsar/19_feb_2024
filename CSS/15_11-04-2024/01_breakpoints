@@ -1,0 +1,8 @@
+Devices                width as per pixels     
+
+mobile device               max-width 576px 
+small screen                min-width 576px 
+tablet device               min-width 768px 
+mini leptop                 min-width 992px
+normal screen               min-width 1200px = 1140
+large screen                min-width 1400px 
