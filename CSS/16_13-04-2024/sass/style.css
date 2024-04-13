@@ -1,0 +1,39 @@
+:root {
+  --font1: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  border: 1px solid black;
+  width: 400px;
+  position: relative;
+  margin: auto;
+}
+.overlay img {
+  height: auto;
+  width: 400px;
+  vertical-align: middle;
+}
+.overlay .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.768);
+  color: white;
+  display: grid;
+  place-content: center;
+  transform: scale(0);
+  transition: 1s ease;
+  font-size: var(--font1);
+}
+.overlay:hover .text {
+  transform: scale(1);
+}/*# sourceMappingURL=style.css.map */

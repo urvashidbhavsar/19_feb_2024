@@ -1,0 +1,48 @@
+// css variable
+:root {
+    --font1: 30px;
+}
+
+// less variable
+@height  : auto;
+@width-1 : 400px;
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.overlay {
+    border  : 1px solid black;
+    width   : @width-1;
+    position: relative;
+    margin  : auto;
+
+    img {
+        height        : @height;
+        width         : 400px;
+        vertical-align: middle;
+    }
+
+    .text {
+        position           : absolute;
+        top                : 0;
+        left               : 0;
+        right              : 0;
+        bottom             : 0;
+        background-color   : black;
+        opacity            : 0.7;
+        color              : white;
+        display            : grid;
+        place-content      : center;
+        // transform       : scale(0);
+        transition         : 1s ease;
+        height             : 100%;
+        width              : 100%;
+        font-size          : var(--font1);
+    }
+
+    &:hover {
+        transform: scale(1);
+    }
+}
