@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340;
+  }
+}
+
+.ptb-1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ptb-2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ptb-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ptb-4 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ptb-5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  padding: 8px 15px;
+  background-color: #4940f5;
+  border: 1px solid transparent;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-radius {
+  border-radius: 40px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .logo {
+  flex-grow: 1;
+}
+header .navbar .logo a {
+  color: black;
+}
+header .navbar .nav {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  header .navbar .nav {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  header .navbar .nav {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar .nav {
+    display: flex;
+  }
+}
+header .navbar .nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .navbar .nav ul li {
+  padding: 10px;
+}
+header .navbar .nav ul li a {
+  color: black;
+  font-size: 17px;
+}
+header .navbar .nav ul li a:after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #4940f5;
+  display: block;
+  transform: scaleX(0);
+  transition: 0.2s ease;
+}
+header .navbar .nav ul li a:hover:after {
+  transform: scaleX(1);
+}
+@media (max-width: 576px) {
+  header .navbar .toggle {
+    display: block;
+  }
+}
+@media (min-width: 576px) {
+  header .navbar .toggle {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar .toggle {
+    display: none;
+  }
+}
+header .navbar .toggle .tbtn {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
