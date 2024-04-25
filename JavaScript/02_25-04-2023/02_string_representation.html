@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var val = 10;
+        // i have a Rs.10
+        // before ES6
+        document.write("<div class='text'>I have a Rs.", val, "</div>");
+        document.write("<div class='text'>I have a Rs." + val + "</div>");
+
+        // after ES6
+        document.write(`
+            <div class='text'>I have a Rs.${val} </div>
+        `)
+    </script>
+</body>
+
+</html>
