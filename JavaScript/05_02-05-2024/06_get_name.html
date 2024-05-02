@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="gen" id=""> Male
+    <input type="radio" name="gen" id=""> Female
+    <input type="radio" name="gen" id=""> Other
+
+    <p>Length is : <span id="res"></span></p>
+
+    <script>
+        var sel = document.getElementsByName("gen")
+        document.getElementById("res").innerText = sel.length
+    </script>
+</body>
+
+</html>

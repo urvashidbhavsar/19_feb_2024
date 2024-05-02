@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- use where is multiple values / group selection -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        // document.body.style.width
+
+        var box = document.querySelectorAll(".box");
+        for (let i = 0; i <= box.length; i++) {
+            box[i].style.height = "100px";
+            box[i].style.width = "100px";
+            box[i].style.backgroundColor = "green"
+            box[i].style.margin = "10px"
+        }
+    </script>
+
+    <div class="parent">
+        <h1 class="child"></h1>
+    </div>
+
+    <script>
+        var sel = document.querySelectorAll(".parent .child");
+        sel[0].innerHTML = "hello"
+    </script>
+
+    <p class="para"></p>
+    <h6></h6>
+    <h2></h2>
+
+    <script>
+        var line = document.querySelectorAll(".para, h6, h2")
+        for (let i = 0; i < line.length; i++) {
+            line[i].innerHTML = "group"
+        }
+    </script>
+</body>
+
+</html>
