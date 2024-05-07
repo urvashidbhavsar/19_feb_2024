@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* create a random class which is not in any html structure. */
+        .title1 {
+            font-size: 40px;
+            color: white;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+        }
+
+        .title2 {
+            font-size: 35px;
+            color: red;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addCss()">add css</button>
+    <button onclick="removeCss()">remove css</button>
+    <button onclick="toggleCss()">toggle css</button>
+    <button onclick="checkClass()">contains</button>
+
+    <h1 class="head1">this is heading tag</h1>
+    <h1 class="head2">this is heading tag</h1>
+
+    <script>
+        function addCss() {
+            let h1 = document.querySelector(".head1");
+            h1.classList.add("title1");
+        }
+        function removeCss() {
+            let h1 = document.querySelector(".head1");
+            h1.classList.remove("title1")
+        }
+        function toggleCss() {
+            let h1 = document.querySelector(".head2");
+            h1.classList.toggle("title2")
+        }
+        function checkClass() {
+            let h1 = document.querySelector(".head2");
+            if (h1.classList.contains("title2") == true) {
+                alert("class exist")
+            } else {
+                alert("class not exist")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="" id="fname">
+        <button onclick="return userInput()">click</button>
+    </form>
+    <p>You entered : <span id="res"></span></p>
+
+    <script>
+        function userInput() {
+            let firstname = document.getElementById("fname");
+            if (firstname.value == "") {
+                alert("Enter Name")
+                firstname.style.border = "1px solid red";
+            } else {
+                document.getElementById("res").innerHTML = firstname.value;
+                firstname.style.border = "1px solid gray";
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

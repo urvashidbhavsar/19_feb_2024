@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv,
+        .sub,
+        h1 {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ondblclick => click twice time 
+        onmousedown => effected like click
+        onmouseenter => when pointer enter on element. effected only once.
+        onmouseleave => when pointer leave from an element. effected only once.
+        onmousemove => when cursor move on element.
+        onmouseout => when pointer moved off from parent, as well as child.
+        onmouseover => when pointer move on an element. parent 
+        as well as child.
+        onmouseup => effected like a click but apply when key is released.
+        onmousewheel => when used mouse wheel.
+    -->
+    <div class="mydiv" onmousewheel="myMsg()">
+        <div class="sub">
+            <h1>Hover me!!!</h1>
+        </div>
+    </div>
+    <!-- onkeydown => when user press down the key and when we pressed any key on keyboard.
+        onkeypress => effected when we pressed alphabets, number and special character keys.
+        onkeyup => when user released the key.
+    -->
+    <div>
+        <input type="text" name="" id="" style="height: 40px; width: 300px;" onkeyup="myMsg()">
+    </div>
+
+    <script>
+        function myMsg() {
+            alert("hello we learn js");
+        }
+    </script>
+
+</body>
+
+</html>

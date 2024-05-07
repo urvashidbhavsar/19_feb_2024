@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myimg {
+            width: 400px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setAttr()">set attribute</button>
+    <button onclick="removeAttr()">remove attribute</button>
+    <button onclick="getAttr()">get attribute</button>
+    <hr>
+    <img src="https://images.unsplash.com/photo-1535320404287-416e2c6d2b41?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+        alt="" id="img1">
+
+    <script>
+        function setAttr() {
+            let img = document.getElementById("img1");
+            // img.setAttribute("width", "400px")
+            img.setAttribute("class", "myimg")
+        }
+        function removeAttr() {
+            let img = document.getElementById("img1");
+            img.removeAttribute("class")
+        }
+        function getAttr() {
+            let img = document.getElementById("img1");
+            let attr = img.getAttribute("class")
+            alert(attr)
+        }
+    </script>
+</body>
+
+</html>
