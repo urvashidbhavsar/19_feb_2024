@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addElement()">create element</button>
+
+    <ul id="list">
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        function addElement() {
+            var element = document.createElement("li");
+            var ele_text = document.createTextNode("My List");
+            element.appendChild(ele_text);
+            // element.add(ele_text);
+            document.getElementById("list").append(element)
+        }
+    </script>
+</body>
+
+</html>

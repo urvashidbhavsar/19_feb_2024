@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click here</button>
+    <button id="btn1">click 1</button>
+    <button id="btn2">click 2</button>
+
+    <script>
+        // 1st way
+        var b = document.getElementById("btn");
+        b.addEventListener("click", function () {
+            alert("Welcome we learn events")
+        })
+
+        
+        function msg() {
+            alert("click on button 1")
+        }
+        // 2nd way
+        var b1 = document.getElementById("btn1");
+        b1.addEventListener("click", msg);
+
+        // 3rd way
+        document.getElementById("btn2").addEventListener("click", msg)
+    </script>
+</body>
+
+</html>

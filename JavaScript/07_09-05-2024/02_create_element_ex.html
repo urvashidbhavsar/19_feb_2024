@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="">Enter City : </label>
+            <input type="text" name="" id="userinp">
+        </div>
+        <div>
+            <button onclick="return addCities()">Add value</button>
+        </div>
+        <div>
+            <label for="">Cities are :</label>
+            <select name="" id="list">
+                <option value="">---select---</option>
+            </select>
+        </div>
+    </form>
+
+    <script>
+        //how to add value attribute in option dynamically?
+        function addCities() {
+            var cityinp = document.getElementById("userinp").value;
+            var option = document.createElement("option");
+            var opt_text = document.createTextNode(cityinp);
+            option.appendChild(opt_text);
+            document.getElementById("list").append(option);
+            document.getElementById("userinp").value = ""
+            return false
+        }   
+    </script>
+</body>
+
+</html>
