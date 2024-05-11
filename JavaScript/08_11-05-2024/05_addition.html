@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="" id="n1">
+        <input type="text" name="" id="n2">
+        <button onclick="return addition()">result</button>
+    </form>
+    <p>Result is : <span id="msg"></span></p>
+
+    <script>
+        function addition() {
+            // let num1 = Number(document.getElementById("n1").value)
+            // let num2 = Number(document.getElementById("n2").value)
+            // let res = num1 + num2 
+
+            let num1 = document.getElementById("n1");
+            let num2 = document.getElementById("n2");
+
+            let res = Number(num1.value) + Number(num2.value);
+            document.getElementById("msg").innerHTML = res;
+
+            return false
+        }
+    </script>
+</body>
+
+</html>

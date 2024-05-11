@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #counting {
+            height: 150px;
+            width: 150px;
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            display: grid;
+            place-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="counting"></div>
+
+    <script>
+        // window.addEventListener("scroll",()=>{
+
+        // })
+        var div = document.getElementById("counting");
+        var start = 100;
+        var counts = setInterval(() => {
+            div.innerHTML = ++start;
+            if (start == 300) {
+                clearInterval(counts)
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
