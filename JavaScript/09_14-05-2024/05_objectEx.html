@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        th,
+        td {
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tbody id="t_title">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile No</th>
+            </tr>
+        </tbody>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        var person = [
+            {
+                id: 1,
+                name: "Imroz",
+                address: "Surat",
+                mobileNo: 9876543210
+            },
+            {
+                id: 2,
+                name: "Divyesh",
+                address: "Surat",
+                mobileNo: 1234569870
+            }
+        ]
+
+        var tbldata = document.getElementById("data");
+        for (let i = 0; i < person.length; i++) {
+            tbldata.innerHTML += `<tr>
+                <td>${person[i].id}</td>
+                <td>${person[i].name}</td>
+                <td>${person[i].address}</td>
+                <td>${person[i].mobileNo}</td>
+            </tr>`
+        }
+    </script>
+</body>
+
+</html>

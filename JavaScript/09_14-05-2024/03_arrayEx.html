@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list {
+            padding: 20px;
+            background-color: brown;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul class="menu"></ul>
+    </div>
+
+    <script>
+        var menus = ["Home", "Blog", "Services", "About", "Contact", "Account"]
+        var list = document.querySelector(".menu");
+        menus.forEach(m => {
+            list.innerHTML += `<li><a href=''>${m}</a></li>`
+            console.log(m);
+        });
+    </script>
+</body>
+
+</html>

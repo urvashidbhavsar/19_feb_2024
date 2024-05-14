@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <script>
+        var person = {
+            firstname: "Raj",
+            lastname: "Patel",
+            dob: "20-01-2001",
+            address: "Surat",
+            mobileNo: 9876543210
+        }
+
+        // document.write(person);
+        console.log(person);
+
+        // print object value
+        document.getElementById("p1").innerHTML = person.firstname + " " + person.lastname
+
+        // to print all values 
+        for (const p in person) {
+            if (Object.hasOwnProperty.call(person, p)) {
+                document.write(`<div>${p} => ${person[p]}</div>`)
+            }
+        }
+    </script>
+</body>
+
+</html>
