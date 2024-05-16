@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = "Hello World";
+        // var ptn = /^[a-z]*$/i;
+        var ptn = /^[a-zA-Z.\s]*$/;
+        // var ptn = /[\D]/
+        // var ptn = /^[0-9]*$/
+        if (ptn.test(str)) {
+            document.write("match")
+        } else {
+            document.write("not match")
+        }
+    </script>
+</body>
+
+</html>
