@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 5px 0;
+        }
+
+        input[type="text"] {
+            height: 25px;
+            width: 90%;
+            padding: 0 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .msg {
+            color: red;
+            font-size: 14px;
+        }
+
+        .error {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <div>Enter Mobile No : </div>
+            <div>
+                <input type="text" name="" id="mobile" onblur="return NoCheck()" onkeyup="return numberMatch()"
+                    maxlength="10">
+                <div>
+                    <span id="msg" class="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div>
+                <button onclick="return NoCheck()">click</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        // on button, on blur
+        function NoCheck() {
+            var inp = document.getElementById("mobile");
+            if (inp.value == "") {
+                document.getElementById("msg").innerHTML = "Enter Mobile No";
+                inp.classList.add("error");
+                inp.focus()
+            } else {
+                document.getElementById("msg").innerHTML = "";
+                inp.classList.remove("error");
+            }
+            return false
+        }
+
+        //    pattern match
+        function numberMatch() {
+            var inp = document.getElementById("mobile");
+            var ptn = /^[0-9]*$/
+            var start_ptn = /^[6-9]/
+            if (!ptn.test(inp.value) || !start_ptn.test(inp.value)) {
+                document.getElementById("msg").innerHTML = "Invalid Number !! "
+                inp.classList.add("error");
+            } else if (inp.value.length < 10) {
+                document.getElementById("msg").innerHTML = "Enter 10 Digits"
+                inp.classList.add("error");
+            } else {
+                document.getElementById("msg").innerHTML = null
+                inp.classList.remove("error")
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
