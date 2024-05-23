@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 5px 0;
+        }
+
+        input[type="text"] {
+            height: 25px;
+            width: 90%;
+            padding: 0 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .msg {
+            color: red;
+            font-size: 14px;
+        }
+
+        .error {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <div>Firstname : </div>
+            <div>
+                <input type="text" name="" id="fname" onblur="return checkBlank('fname', 'msg1')"
+                    onkeyup="return nameMatch('fname', 'msg1')">
+                <div>
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Middlename : </div>
+            <div>
+                <input type="text" name="" id="mname" onblur="return checkBlank('mname', 'msg2')"
+                    onkeyup="return nameMatch('mname', 'msg2')">
+                <div>
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Lastname : </div>
+            <div>
+                <input type="text" name="" id="lname" onblur="return checkBlank('lname', 'msg3')"
+                    onkeyup="return nameMatch('lname', 'msg3')">
+                <div>
+                    <span class="msg" id="msg3"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function checkBlank(blank, msg) {
+            let b = document.getElementById(blank)
+            if (blank.value == "") {
+                document.getElementById(msg).innerHTML = "Enter Value!!!"
+                b.classList.add("error")
+            }
+            return false
+        }
+        function nameMatch(inputval, msg) {
+            var inp = document.getElementById(inputval);
+            var ptn = /^[a-zA-Z]*$/;
+            if (!ptn.test(inp.value)) {
+                document.getElementById(msg).innerHTML = "Invalid Name!!!";
+                inp.classList.add("error")
+            } else if (inp.value.length < 2) {
+                document.getElementById(msg).innerHTML = "Required minimum 2 character";
+                inp.classList.add("error")
+            } else {
+                document.getElementById(msg).innerHTML = null;
+                inp.classList.remove("error")
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>

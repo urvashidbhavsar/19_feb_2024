@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 5px 0;
+        }
+
+        input[type="text"] {
+            height: 25px;
+            width: 90%;
+            padding: 0 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .msg {
+            color: red;
+            font-size: 14px;
+        }
+
+        .error {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <div>Gender : </div>
+            <div>
+                <input type="radio" name="gender" id="male">
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="">Female</label>
+                <div>
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Languages : </div>
+            <div>
+                <input type="checkbox" name="check1" id="c1">
+                <label for="">Gujarati</label>
+                <input type="checkbox" name="check2" id="c2">
+                <label for="">Hindi</label>
+                <input type="checkbox" name="check3" id="c3">
+                <label for="">English</label>
+                <div>
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>City : </div>
+            <div>
+                <select name="" id="list">             <option value="-1">---select---</option>
+                    <option value="">Surat</option>
+                </select>
+                <div>
+                    <span class="msg" id="msg3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div>
+                <button onclick="return FormValidate()">click</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function FormValidate() {
+            let m = document.getElementById("male")
+            let f = document.getElementById("female")
+            if (m.checked == false && f.checked == false) {
+                document.getElementById("msg1").innerHTML = "Select value!!!"
+            } else {
+                document.getElementById("msg1").innerHTML = null
+            }
+
+            let ch1 = document.getElementById("c1")
+            let ch2 = document.getElementById("c2")
+            let ch3 = document.getElementById("c3")
+            if (ch1.checked == false && ch2.checked == false && ch3.checked == false) {
+                document.getElementById("msg2").innerHTML = "Select Languages"
+            } else {
+                document.getElementById("msg2").innerHTML = null
+            }
+
+            let city = document.getElementById("list");
+            if (city.value == "-1") {
+                document.getElementById("msg3").innerHTML = "Select City"
+            } else {
+                document.getElementById("msg3").innerHTML = null
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
