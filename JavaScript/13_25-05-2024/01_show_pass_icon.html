@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        form {
+            border: 1px solid black;
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 5px 0;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            height: 25px;
+            width: 90%;
+            padding: 0 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+            border-right: none;
+        }
+
+        input[type="text"]:focus-visible,
+        [type="password"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .msg {
+            color: red;
+            font-size: 14px;
+        }
+
+        .error {
+            border: 1px solid red !important;
+        }
+
+        .field {
+            display: flex;
+        }
+
+        .icons {
+            height: 25px;
+            width: 25px;
+            border: 1px solid gray;
+            display: grid;
+            place-content: center;
+            border-left: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <div>Enter Password : </div>
+            <div class="field">
+                <input type="password" name="" id="pass">
+                <div class="icons">
+                    <i class="bi bi-eye" id="i1" onclick="return showpass('pass','i1')"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>Re-Enter Password : </div>
+            <div class="field">
+                <input type="password" name="" id="cpass">
+                <div class="icons">
+                    <i class="bi bi-eye" id="i2" onclick="return showpass('cpass','i2')"></i>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function showpass(input_id, icon_id) {
+            let pass = document.getElementById(input_id);
+            let icon = document.getElementById(icon_id);
+            if (pass.type == "password" && icon.classList.contains('bi-eye')) {
+                pass.type = "text"
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash");
+            } else {
+                pass.type = "password"
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+            }
+        }
+    </script>
+</body>
+
+</html>
