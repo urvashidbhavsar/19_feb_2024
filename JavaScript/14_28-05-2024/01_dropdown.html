@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .navbar {
+            background-color: rgb(17, 69, 167);
+            padding: 20px;
+        }
+
+        .navbar .menus {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar .menus li {
+            padding: 5px;
+        }
+
+        .navbar .menus li a {
+            color: white;
+            font-size: 22px;
+        }
+
+        .navbar .menus .dropdown {
+            position: relative;
+        }
+
+        .navbar .menus .dropdown .dropmenu {
+            position: absolute;
+            display: none;
+            background: white;
+            border-radius: 5px;
+            padding: 7px;
+            margin-top: 8px;
+            width: max-content;
+            box-shadow: 0 0 5px black;
+        }
+
+        .navbar .menus .dropdown .dropmenu a {
+            color: black;
+        }
+
+        .show {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="menus">
+            <li><a href="">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Service</a>
+                <ul class="dropmenu">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <!-- work,dynamic code => do not change classname and not use id -->
+            <li class="dropdown">
+                <a href="#">Account</a>
+                <ul class="dropmenu">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Register</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        let dropdown = document.querySelector(".dropdown");
+        let menu = document.querySelector(".dropmenu");
+        dropdown.addEventListener("click", () => {
+            menu.classList.toggle("show")
+        })
+    </script>
+</body>
+
+</html>
