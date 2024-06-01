@@ -1,0 +1,15 @@
+jquery3 = 3.7.1
+
+jquery.com
+
+$(document).ready(function(){
+    $("selector").event_method(function(){
+        $("selector").jquery_function()
+    })
+})
+
+jQuery(document).ready(function () {
+    jQuery("selector").event_method(function () {
+        jQuery("selector").jquery_function()
+    })
+})
