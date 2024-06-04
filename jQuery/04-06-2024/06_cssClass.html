@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 500px;
+        }
+
+        /* create a random class */
+        .mypara1 {
+            font-weight: 500;
+            font-size: 17px;
+            border: 1px solid black;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .mypara2 {
+            font-weight: 700;
+            font-size: 17px;
+            border: 1px solid red;
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- addClass, removeClass, toggleClass, hasClass -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">Add class</button>
+    <button id="btn2">Remove class</button>
+    <button id="btn3">Toggle class</button>
+    <button id="btn4">Has class</button>
+
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet nesciunt repellat numquam odit
+        dignissimos cupiditate eius earum nulla quas explicabo animi unde, deserunt sint quaerat laboriosam aut.
+        Aliquam, expedita.
+    </p>
+
+    <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error delectus expedita voluptate officia. Sed eaque
+        beatae at nostrum omnis animi deleniti harum. Nam, eos aliquid recusandae natus nulla a maiores.
+    </p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").addClass("mypara1")
+            })
+            $("#btn2").click(function () {
+                $("#p1").removeClass("mypara1")
+            })
+            $("#btn3").click(function () {
+                $("#p2").toggleClass("mypara2")
+            })
+            $("#btn4").click(function () {
+                if ($("#p2").hasClass("mypara2")) {
+                    alert("class exist")
+                } else {
+                    alert("class not exist")
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

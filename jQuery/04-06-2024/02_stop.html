@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 150px;
+            width: 150px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">stop</button>
+    <div class="mydiv"></div>
+
+    <script>
+        $(document).ready(function () {
+            $(".mydiv").fadeOut(5000)
+            $("#btn1").click(function () {
+                $(".mydiv").stop()
+            })
+        })
+    </script>
+</body>
+
+</html>
