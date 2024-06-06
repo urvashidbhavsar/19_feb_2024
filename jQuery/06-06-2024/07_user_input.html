@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div>
+        <input type="text" name="" id="userval">
+        <button id="btn">Add</button>
+    </div>
+    <p>You Entered : <span id="res"></span></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $user = $("#userval").val();
+                if ($user == "") {
+                    alert("Enter value")
+                } else {
+                    $("#res").html($user)
+                    $("#userval").val("")
+                }
+                return false
+            })
+        })
+    </script>
+</body>
+
+</html>

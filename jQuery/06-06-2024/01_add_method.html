@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- append(), prepend(), before() after() -->
+
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    <hr>
+    <div class="parent">Parent</div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".parent").append("<div class='child'>Child</div>")
+            })
+            $("#btn2").click(function () {
+                $(".parent").prepend("<div class='child'>Child</div>")
+            })
+            $("#btn3").click(function () {
+                $(".parent").before("<div class='child'>Child</div>")
+            })
+            $("#btn4").click(function () {
+                $(".parent").after("<div class='child'>Child</div>")
+            })
+        })
+    </script>
+</body>
+
+</html>
