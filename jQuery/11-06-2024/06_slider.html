@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .bx-wrapper {
+            border: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div class="home-slider">
+        <div class="slider">
+            <img src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg" title="image 1" />
+        </div>
+        <div class="slider">
+            <img src="https://static.vecteezy.com/system/resources/previews/032/259/695/large_2x/beautiful-peacock-in-the-water-flowers-house-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg"
+                title="image 2" />
+        </div>
+        <div class="slider">
+            <img src="https://marketplace.canva.com/EAFOQzyHrn4/1/0/1600w/canva-sunset-mountain-landscape-desktop-wallpaper-d5thzPug3N4.jpg"
+                title="image 3" />
+        </div>
+        <div class="slider">
+            <img src="https://static.vecteezy.com/system/resources/previews/030/286/757/large_2x/sunflower-flowers-nature-nature-wallpaper-nature-wallpaper-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg"
+                title="image 4" />
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js"></script>
+
+    <script>
+        $(function () {
+            $('.home-slider').bxSlider({
+                mode: 'fade',
+                // captions: true,
+                // slideWidth: 600
+                auto: true,
+                controls: false,
+            });
+        });
+    </script>
+</body>
+
+</html>

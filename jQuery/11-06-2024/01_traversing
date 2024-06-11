@@ -1,0 +1,14 @@
+traversing means move through which is represent HTML DOM 
+ i.e. dom manipulation
+
+ (1) ancestor => move up => i.e. parent 
+    parent, parents, parentUntil
+
+ (2) descendent => move down => i.e. child 
+    children, find 
+
+ (3) siblings => similler
+   siblings, next, nextAll, nextUntil, prev, prevAll, prevUntil
+
+ (4) filter => searching
+    filter, first, last, eq, not 

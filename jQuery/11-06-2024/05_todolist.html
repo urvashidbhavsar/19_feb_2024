@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .close {
+            text-decoration: none;
+            color: red;
+        }
+
+        .close:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div>
+        <input type="text" name="" id="userinput">
+        <button id="add">Add</button>
+    </div>
+    <ul id="list"></ul>
+
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                $input = $("#userinput").val()
+                if ($input == "") {
+                    alert("Enter value")
+                } else {
+                    $("#list").append(`
+                        <li>${$input}
+                            <a href='#' class="close">&Cross;</a>
+                        </li>
+                    `);
+                    $("#userinput").val('')
+                }
+
+                $(".close").on("click", function () {
+                    $(this).parent().remove()
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

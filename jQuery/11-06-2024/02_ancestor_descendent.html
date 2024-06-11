@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul,
+        li {
+            border: 1px solid gray;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .set {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div class="main"> Main
+        <div class="sub"> Sub
+            <div class="inner"> inner
+                <ul> ul
+                    <li>List 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // single value selection => move only 1 step
+            // $("li").parent().addClass("set")
+
+            // select all parents
+            // $("li").parents(".inner").addClass("set")
+
+            // $("li").parentsUntil(".main").addClass("set")
+
+            // single selection => move only 1 step
+            // $(".main").children().addClass("set")
+
+            $(".main").find(".inner").addClass("set")
+        })
+    </script>
+</body>
+
+</html>
