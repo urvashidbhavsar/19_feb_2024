@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <style>
+        img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        @media (max-width:576px) {
+            img {
+                height: 300px;
+                object-fit: scale-down;
+            }
+        }
+    </style>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://avatars.mds.yandex.net/i?id=b507a2b8d9382967a186c654f1eeaa74-5262078-images-taas-consumers&n=27&h=480&w=480"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://avatars.mds.yandex.net/i?id=8437e262024b4e10bd9f92d52253abf7-5357304-images-taas-consumers&n=27&h=480&w=480"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://st3.depositphotos.com/3203307/15981/i/450/depositphotos_159812656-stock-photo-dandelion-in-the-wind.jpg"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://images.pexels.com/photos/355508/pexels-photo-355508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://www.bnf.fr/sites/default/files/2019-10/btv1b8457904c_f1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers&n=27&h=480&w=480"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://www.w3schools.com/howto/img_forest.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://slp-statics.astockcdn.net/static_assets/staging/24spring/home/curated-collections/card-1.jpg?width=580"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://media.istockphoto.com/id/1382384282/photo/bangalore-or-bengaluru.jpg?s=612x612&w=0&k=20&c=6pxwL3JxNV2B_NZSLMZLhrSLqAbyCPlGuSZYKImpjKQ="
+                alt="">
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                // items: 1 => show only 1 image
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

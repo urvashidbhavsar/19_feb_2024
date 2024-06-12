@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .bx-wrapper {
+            border: none !important;
+        }
+
+        .slider1 {
+            background: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .slider2 {
+            background: url(https://static.vecteezy.com/system/resources/previews/032/259/695/large_2x/beautiful-peacock-in-the-water-flowers-house-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .slider3 {
+            background: url(https://marketplace.canva.com/EAFOQzyHrn4/1/0/1600w/canva-sunset-mountain-landscape-desktop-wallpaper-d5thzPug3N4.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .slider4 {
+            background: url(https://static.vecteezy.com/system/resources/previews/030/286/757/large_2x/sunflower-flowers-nature-nature-wallpaper-nature-wallpaper-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .flexvalues {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .slider {
+            padding: 250px 100px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .slider::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.704);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 50px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        p {
+            color: white;
+            padding: 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div class="home-slider">
+        <div class="slider slider1">
+            <div class="flexvalues">
+                <div class="left"></div>
+                <div class="right">
+                    <h1>My title</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, omnis nulla facilis non,
+                        asperiores harum aspernatur praesentium eius tempora quam, obcaecati minus suscipit atque ab
+                        neque
+                        quae
+                        dicta quibusdam dignissimos?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slider slider2">
+            <div class="flexvalues">
+                <div class="left"></div>
+                <div class="right">
+                    <h1>My title</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, omnis nulla facilis non,
+                        asperiores harum aspernatur praesentium eius tempora quam, obcaecati minus suscipit atque ab
+                        neque
+                        quae
+                        dicta quibusdam dignissimos?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slider slider3">
+            <div class="flexvalues">
+                <div class="left"></div>
+                <div class="right">
+                    <h1>My title</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, omnis nulla facilis non,
+                        asperiores harum aspernatur praesentium eius tempora quam, obcaecati minus suscipit atque ab
+                        neque
+                        quae
+                        dicta quibusdam dignissimos?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slider slider4">
+            <div class="flexvalues">
+                <div class="left"></div>
+                <div class="right">
+                    <h1>My title</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, omnis nulla facilis non,
+                        asperiores harum aspernatur praesentium eius tempora quam, obcaecati minus suscipit atque ab
+                        neque
+                        quae
+                        dicta quibusdam dignissimos?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js"></script>
+
+    <script>
+        $(function () {
+            $('.home-slider').bxSlider({
+                mode: 'fade',
+                // captions: true,
+                // slideWidth: 600
+                auto: true,
+                controls: false,
+            });
+        });
+    </script>
+</body>
+
+</html>

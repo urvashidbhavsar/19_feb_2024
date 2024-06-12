@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- 
+        ajax => asyncronised Javascript and Xml 
+        which is load data without reload current page.
+    -->
+
+    <button id="btn">load data</button>
+
+    <!-- <h1></h1> -->
+    <div class="imagesliders"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // $("h1").load("libraries.txt")
+                $(".imagesliders").load("02_owl_carousel.html")
+            })
+        })
+    </script>
+</body>
+
+</html>
