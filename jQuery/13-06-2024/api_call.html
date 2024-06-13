@@ -69,6 +69,20 @@
                             }
                             $("#userTable").find("#loadData").append(data)
                         },
+
+                    error:
+                        function (responsive) {
+                            let data = "";
+                            data = `
+                                <tr>
+                                    <td colspan=8>
+                                        <div class="alert alert-danger" role="alert">
+                                            File not loaded
+                                        </div>
+                                    </td>
+                                </tr>`
+                            $("#userTable").find("#loadData").append(data)
+                        },
                 })
             })
         })
