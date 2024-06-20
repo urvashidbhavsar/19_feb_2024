@@ -1,0 +1,18 @@
+css                         breakpoint(class)
+
+max-width:576px                 - (xs)
+min-width:576px                 sm 
+min-width:768px                 md 
+min-width:992px                 lg 
+min-width:1200px                xl 
+min-width:1400px                xxl 
+
+for set layout 2 class available 
+
+(1) container 
+(2) container-fluid 
+
+bootstrap provide 12 column grid system.
+
+(1) row class 
+(2) col class 
