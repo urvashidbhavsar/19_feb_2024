@@ -1,0 +1,22 @@
+for label => form-label 
+
+for input type, text, password, date, number, search, week, month, file 
+for textarea 
+=> form-control
+
+for checkbox, radio 
+parent div, if vertically => form-check & horizontally => form-check-inline 
+input => form-check-input 
+label => form-check-label 
+
+for select-option 
+=> form-select 
+
+for input range 
+=> form-range 
+
+for input color 
+=> form-control, form-control-color
+
+for input-group 
+=>
