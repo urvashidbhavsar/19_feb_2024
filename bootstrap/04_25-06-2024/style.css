@@ -1,0 +1,7 @@
+a {
+    color: black !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
