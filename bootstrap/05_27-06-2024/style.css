@@ -1,0 +1,65 @@
+a {
+    color: black !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.slider {
+    position: relative;
+    z-index : 1;
+}
+
+.slider::after {
+    content         : "";
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index         : -1;
+}
+
+.slider1 {
+    background     : url(https://wallpapers.com/images/featured/desktop-lsjkr6wg7ctq97qv.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.slider2 {
+    background     : url(https://static.vecteezy.com/system/resources/previews/024/663/796/non_2x/amazing-background-image-high-resolution-desktop-wallpaper-generative-ai-free-photo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.slider3 {
+    background     : url(https://cdn.wallpapersafari.com/13/41/KXNwEl.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.read {
+    color                    : blue !important;
+    text-decoration-line     : underline;
+    text-decoration-color    : blue;
+    text-decoration-style    : solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset    : 9px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: darkcyan;
+    color           : white;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.darkTheme {
+    background-color: rgb(56, 56, 56) !important;
+    color           : white !important;
+}
+
+.darkTheme a {
+    color: white !important;
+}

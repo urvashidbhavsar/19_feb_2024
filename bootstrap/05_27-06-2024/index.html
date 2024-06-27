@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h2>ManyCorp.</h2>
+                    </a>
+                    <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#top-menu" aria-controls="top-menu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end gap-5" id="top-menu">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Demos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Modern Agency</a></li>
+                                    <li><a class="dropdown-item" href="#">SEO learning</a></li>
+                                    <li><a class="dropdown-item" href="#">Sass Learning</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Element</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginpage">Login</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="search bg-danger text-white rounded-circle p-2">
+                                <a href="" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#search-panel"
+                                    aria-controls="search-panel">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary position-relative btn-lg">
+                                    Get a Quote <i class="bi bi-chevron-double-right"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Change Theme" id="changeTheme">
+                                    <i class="bi bi-moon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home">
+        <div id="HomeSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="slider1 slider py-lg-5 py-md-3 py-sm-2 py-2">
+                        <div class="row justify-content-center  py-lg-5 py-md-3 py-sm-2 py-2">
+                            <div class="col-12 col-sm-12 col-md-8">
+                                <div class=" py-lg-5 py-md-3 py-sm-2 py-2">
+                                    <p class="display-3 text-center text-white fw-medium">Connecting All to banking need
+                                    </p>
+                                    <p class="text-white text-center">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sit aperiam nobis
+                                        veniam,
+                                        sunt labore cupiditate quia corrupti aliquam laborum minima pariatur natus
+                                        debitis
+                                        fugiat
+                                        nostrum quibusdam praesentium accusantium explicabo?
+                                    </p>
+                                    <div class="text-center pt-3">
+                                        <button class="btn btn-primary btn-lg">Find Out More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="slider2 slider py-lg-5 py-md-3 py-sm-2 py-2">
+                        <div class="row justify-content-center  py-lg-5 py-md-3 py-sm-2 py-2">
+                            <div class="col-12 col-sm-12 col-md-8">
+                                <div class=" py-lg-5 py-md-3 py-sm-2 py-2">
+                                    <p class="display-3 text-center text-white fw-medium">Connecting All to banking need
+                                    </p>
+                                    <p class="text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sit aperiam nobis
+                                        veniam,
+                                        sunt labore cupiditate quia corrupti aliquam laborum minima pariatur natus
+                                        debitis
+                                        fugiat
+                                        nostrum quibusdam praesentium accusantium explicabo?
+                                    </p>
+                                    <div class="text-center pt-3">
+                                        <button class="btn btn-primary btn-lg">Find Out More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider3 slider  py-lg-5 py-md-3 py-sm-2 py-2">
+                        <div class="row justify-content-center  py-lg-5 py-md-3 py-sm-2 py-2">
+                            <div class="col-12 col-sm-12 col-md-8">
+                                <div class="py-lg-5 py-md-3 py-sm-2 py-2">
+                                    <p class="display-3 text-center text-white fw-medium">Connecting All to banking need
+                                    </p>
+                                    <p class="text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sit aperiam nobis
+                                        veniam,
+                                        sunt labore cupiditate quia corrupti aliquam laborum minima pariatur natus
+                                        debitis
+                                        fugiat
+                                        nostrum quibusdam praesentium accusantium explicabo?
+                                    </p>
+                                    <div class="text-center pt-3">
+                                        <button class="btn btn-primary btn-lg">Find Out More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#HomeSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#HomeSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container py-5">
+            <div class="row py-3 g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="p-4 shadow-lg rounded">
+                        <div class="fs-1 text-primary-emphasis pb-2">
+                            <i class="bi bi-display"></i>
+                        </div>
+                        <h5 class="pb-3">
+                            <a href="" class="text-decoration-none">Online Business</a>
+                        </h5>
+                        <p class="text-secondary">
+                            Vivamus a ligula quam. Duis feugiat tortor sed Ut blandit. Duis feugiat tortor sed.
+                        </p>
+                        <div>
+                            <a href="" class="read">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="p-4 shadow-lg rounded">
+                        <div class="fs-1 text-primary-emphasis pb-2">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                        </div>
+                        <h5 class="pb-3">
+                            <a href="" class="text-decoration-none">Business Plan</a>
+                        </h5>
+                        <p class="text-secondary">
+                            Vivamus a ligula quam. Duis feugiat tortor sed Ut blandit. Duis feugiat tortor sed.
+                        </p>
+                        <div>
+                            <a href="" class="read">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="p-4 shadow-lg rounded">
+                        <div class="fs-1 text-primary-emphasis pb-2">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h5 class="pb-3">
+                            <a href="" class="text-decoration-none">Mobile Bank</a>
+                        </h5>
+                        <p class="text-secondary">
+                            Vivamus a ligula quam. Duis feugiat tortor sed Ut blandit. Duis feugiat tortor sed.
+                        </p>
+                        <div>
+                            <a href="" class="read">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="p-4 shadow-lg rounded">
+                        <div class="fs-1 text-primary-emphasis pb-2">
+                            <i class="bi bi-cash"></i>
+                        </div>
+                        <h5 class="pb-3">
+                            <a href="" class="text-decoration-none">Amount Deposite</a>
+                        </h5>
+                        <p class="text-secondary">
+                            Vivamus a ligula quam. Duis feugiat tortor sed Ut blandit. Duis feugiat tortor sed.
+                        </p>
+                        <div>
+                            <a href="" class="read">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container py-5">
+            <h1 class="text-center">FAQ</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <div class="py-3">
+                        <div class="accordion accordion-flush" id="faqQuestions">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ques1" aria-expanded="false" aria-controls="ques1">
+                                        What is the meaning of amount on deposit?
+                                    </button>
+                                </h2>
+                                <div id="ques1" class="accordion-collapse collapse" data-bs-parent="#faqQuestions">
+                                    <div class="accordion-body">
+                                        Amount on deposit means the sum of a member's employee and employer
+                                        contributions
+                                        and, if applicable, any earnings or
+                                        losses on those contributions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ques2" aria-expanded="false" aria-controls="ques2">
+                                        How do you explain deposit?
+                                    </button>
+                                </h2>
+                                <div id="ques2" class="accordion-collapse collapse" data-bs-parent="#faqQuestions">
+                                    <div class="accordion-body">
+                                        A deposit is essentially your money that you transfer to another party, such as
+                                        when
+                                        you move funds into a checking
+                                        account at a bank or credit union. In the case of depositing money into a bank
+                                        account, you can withdraw the money at
+                                        any time, transfer it to another person's account, or use it to make purchases.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ques3" aria-expanded="false" aria-controls="ques3">
+                                        What is deposit in money?
+                                    </button>
+                                </h2>
+                                <div id="ques3" class="accordion-collapse collapse" data-bs-parent="#faqQuestions">
+                                    <div class="accordion-body">
+                                        Deposit is a term used to denote the money kept or held in any bank account,
+                                        especially to accumulate interest. The fund
+                                        used as a security to get the goods delivered can also be called a deposit. Any
+                                        transaction processed to transfer money
+                                        to an entity for safeguarding can be referred to as a deposit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ques4" aria-expanded="false" aria-controls="ques4">
+                                        What is a deposit type?
+                                    </button>
+                                </h2>
+                                <div id="ques4" class="accordion-collapse collapse" data-bs-parent="#faqQuestions">
+                                    <div class="accordion-body">
+                                        Deposit Types: denotes how a paycheck is split between accounts. Deposit Type –
+                                        Amount: denotes that this account will
+                                        receive a specific amount of your paycheck. Deposit Type – Percent: denotes that
+                                        this account will receive a specified
+                                        percent of your paycheck.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginpage" tabindex="-1" aria-labelledby="loginpageLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 border-start border-3 border-success ps-4" id="loginpageLabel">
+                        Login
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="email" placeholder="">
+                                <label for="email">Enter Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="pass" placeholder="">
+                                <label for="pass">Enter Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="search-panel" aria-labelledby="search-panelLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="search-panelLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3 class="pt-5">Search Here</h3>
+            <form action="">
+                <div class="row pt-2 pb-5 g-3">
+                    <div class="col-12">
+                        <input type="text" placeholder="Search" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <button class="w-100 btn btn-outline-success">Search</button>
+                    </div>
+                </div>
+            </form>
+            <h3>Follow Us</h3>
+            <div class="d-flex gap-4 align-items-center">
+                <div>
+                    <i class="bi bi-twitter"></i>
+                </div>
+                <div>
+                    <i class="bi bi-facebook"></i>
+                </div>
+                <div>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+                <div>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        var theme = document.getElementById("changeTheme");
+        var b = document.querySelector("body")
+        theme.addEventListener("click", () => {
+            b.classList.toggle("darkTheme")
+        })
+    </script>
+</body>
+
+</html>
