@@ -1,0 +1,27 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.mydiv {
+  width: 300px;
+  border: 2px solid #000000;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #056a05;
+  color: #ffffff;
+}
+
+.mydiv1 {
+  width: 300px;
+  border: 2px dashed #056a05;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+h1 {
+  font-size: calc(2vw + 1rem);
+}/*# sourceMappingURL=var.css.map */
