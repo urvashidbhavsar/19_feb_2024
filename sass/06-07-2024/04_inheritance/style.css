@@ -1,0 +1,21 @@
+.div3, .div2, .div1 {
+  height: 100px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  gap: 30px;
+}
+
+.div1 {
+  background-color: #137be2;
+}
+
+.div2 {
+  background-color: #22aa55;
+}
+
+.div3 {
+  background-color: #df34ac;
+}/*# sourceMappingURL=style.css.map */
