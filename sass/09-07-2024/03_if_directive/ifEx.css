@@ -1,0 +1,13 @@
+.square {
+  width: 500px;
+  border-radius: 10px;
+  background-color: #58ee13;
+  padding: 30px;
+}
+
+.circle {
+  width: 500px;
+  border-radius: 5px;
+  background-color: rgb(7, 58, 144);
+  padding: 20px;
+}/*# sourceMappingURL=ifEx.css.map */

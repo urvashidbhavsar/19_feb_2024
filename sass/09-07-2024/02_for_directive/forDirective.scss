@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+$color : #413e05;
+
+%setdiv {
+    color  : white;
+    padding: 20px;
+}
+
+@for $i from 1 through 3 {
+    li:nth-child(#{$i}) {
+        background-color: lighten($color, $i *0.5%);
+        @extend %setdiv
+    }
+}

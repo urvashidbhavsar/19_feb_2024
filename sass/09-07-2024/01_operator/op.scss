@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@mixin bgcolor($bg : #ab12ef) {
+    background-color: $bg;
+    color           : white;
+}
+
+%divborder {
+    border: 2px solid black;
+}
+
+div[role='main'] {
+    @extend %divborder;
+    @include bgcolor;
+    width  : math.div(200px, 400px)*100%;
+    height : math.div(200px, 100px)*100px;
+    padding: 20px;
+}

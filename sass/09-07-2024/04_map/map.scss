@@ -1,0 +1,29 @@
+@use "sass:map";
+
+$light:("light" : 100,
+    "lighten":200,
+);
+$heavy:("medium":600,
+    "bold":700,
+);
+
+@mixin addweight($weight) {
+    $weight: map.merge($light, $heavy)
+}
+
+$icons:("user": "\f007",
+    "insta": "\f16d",
+    "heart" :"\f004",
+);
+
+@each $name,
+$glaph in $icons {
+    .icon-#{$name}:before {
+        content    : $glaph;
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+    }
+}
+
+.icon {
+    @include addweight("bold");
+}

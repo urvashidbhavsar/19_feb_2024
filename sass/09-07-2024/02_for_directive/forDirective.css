@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+li:nth-child(3), li:nth-child(2), li:nth-child(1) {
+  color: white;
+  padding: 20px;
+}
+
+li:nth-child(1) {
+  background-color: #434005;
+}
+
+li:nth-child(2) {
+  background-color: #464305;
+}
+
+li:nth-child(3) {
+  background-color: #484506;
+}/*# sourceMappingURL=forDirective.css.map */

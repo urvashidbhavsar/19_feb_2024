@@ -1,0 +1,14 @@
+.icon-user:before {
+  content: "\f007";
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+}
+
+.icon-insta:before {
+  content: "\f16d";
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+}
+
+.icon-heart:before {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+}/*# sourceMappingURL=map.css.map */
