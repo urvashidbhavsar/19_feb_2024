@@ -1,0 +1,36 @@
+// variables
+
+$white    : #ffffff;
+$black    : #000000;
+$teal     :#026363;
+$darkblue :#060634;
+$lightgray:#d9d8d8;
+
+$p-5px:5px;
+$p-1  :0.8rem;
+$p-2  :1.75rem;
+$p-3  :2.5rem;
+$p-4  :3rem;
+
+$font-1:calc(3vw + 16px);
+$font-2:calc(2.5vw + 16px);
+
+$fixFont  : 16px;
+$fixFont-1:25px;
+
+// create Inheitance
+%btnsize {
+    padding         : $p-1 $p-3;
+    background-color: $teal;
+    color           : $white;
+    border          : 2px solid transparent;
+    text-transform  : uppercase;
+    font-weight     : 600;
+    letter-spacing  : 1px;
+}
+
+%inputfield {
+    width  : 100%;
+    border : 1px solid $lightgray;
+    padding: 5px 10px;
+}

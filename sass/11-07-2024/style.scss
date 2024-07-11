@@ -1,0 +1,129 @@
+@use "mixins";
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+// common
+.container {
+    max-width: 1200px;
+    margin   : auto;
+}
+
+.homepage {
+    background     : url(https://akm-img-a-in.tosshub.com/aajtak/images/story/202212/toyota_innova_history-amp-sixteen_nine.jpg) no-repeat center;
+    background-size: cover;
+    position       : relative;
+    z-index        : 1;
+    padding        : 100px 0;
+
+    &:before {
+        content         : "";
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
+        background-color: rgb(mixins.$darkblue, 0.7);
+        z-index         : -1;
+    }
+
+    .home-data {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items          : center;
+
+        .home-info {
+            h6 {
+                color         : mixins.$white;
+                font-size     : mixins.$fixFont;
+                padding-bottom: mixins.$p-1;
+            }
+
+            h1 {
+                font-size: mixins.$font-1;
+                color    : mixins.$white;
+            }
+
+            p {
+                color  : mixins.$white;
+                padding: mixins.$p-1 0;
+            }
+
+            .btn {
+                // call inheritance
+                @extend %btnsize;
+
+                &:hover {
+                    background-color: transparent;
+                    color           : mixins.$teal;
+                    border          : 2px solid mixins.$teal;
+                }
+            }
+        }
+
+        .BookForm {
+            padding: 0 mixins.$p-3;
+
+            .form {
+                border         : 1px solid mixins.$white;
+                padding        : mixins.$p-4;
+                backdrop-filter: blur(10px);
+
+                h5 {
+                    font-size     : mixins.$fixFont-1;
+                    color         : mixins.$white;
+                    padding-bottom: mixins.$p-2;
+                }
+
+                .field {
+                    display              : grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap                  : 20px;
+                    padding              : mixins.$p-5px 0;
+                }
+
+                .formField {
+                    padding: mixins.$p-5px 0;
+                }
+
+                select {
+                    @extend %inputfield;
+                    height: 40px;
+
+                    &:focus-visible {
+                        outline: none
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 15px red;
+                    }
+                }
+
+                input[type="date"],
+                [type="text"] {
+                    @extend %inputfield;
+                    height: 30px;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 15px red;
+                    }
+                }
+
+                .btn {
+                    @extend %btnsize;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

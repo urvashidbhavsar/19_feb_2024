@@ -1,0 +1,118 @@
+.homepage .home-data .home-info .btn, .homepage .home-data .BookForm .form .btn {
+  padding: 0.8rem 2.5rem;
+  background-color: #026363;
+  color: #ffffff;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.homepage .home-data .BookForm .form select, .homepage .home-data .BookForm .form input[type=date],
+.homepage .home-data .BookForm .form [type=text] {
+  width: 100%;
+  border: 1px solid #d9d8d8;
+  padding: 5px 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.homepage {
+  background: url(https://akm-img-a-in.tosshub.com/aajtak/images/story/202212/toyota_innova_history-amp-sixteen_nine.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0;
+}
+.homepage:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(6, 6, 52, 0.7);
+  z-index: -1;
+}
+.homepage .home-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.homepage .home-data .home-info h6 {
+  color: #ffffff;
+  font-size: 16px;
+  padding-bottom: 0.8rem;
+}
+.homepage .home-data .home-info h1 {
+  font-size: calc(3vw + 16px);
+  color: #ffffff;
+}
+.homepage .home-data .home-info p {
+  color: #ffffff;
+  padding: 0.8rem 0;
+}
+.homepage .home-data .home-info .btn:hover {
+  background-color: transparent;
+  color: #026363;
+  border: 2px solid #026363;
+}
+.homepage .home-data .BookForm {
+  padding: 0 2.5rem;
+}
+.homepage .home-data .BookForm .form {
+  border: 1px solid #ffffff;
+  padding: 3rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.homepage .home-data .BookForm .form h5 {
+  font-size: 25px;
+  color: #ffffff;
+  padding-bottom: 1.75rem;
+}
+.homepage .home-data .BookForm .form .field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 5px 0;
+}
+.homepage .home-data .BookForm .form .formField {
+  padding: 5px 0;
+}
+.homepage .home-data .BookForm .form select {
+  height: 40px;
+}
+.homepage .home-data .BookForm .form select:focus-visible {
+  outline: none;
+}
+.homepage .home-data .BookForm .form select:focus {
+  box-shadow: 0 0 15px red;
+}
+.homepage .home-data .BookForm .form input[type=date],
+.homepage .home-data .BookForm .form [type=text] {
+  height: 30px;
+}
+.homepage .home-data .BookForm .form input[type=date]:focus-visible,
+.homepage .home-data .BookForm .form [type=text]:focus-visible {
+  outline: none;
+}
+.homepage .home-data .BookForm .form input[type=date]:focus,
+.homepage .home-data .BookForm .form [type=text]:focus {
+  box-shadow: 0 0 15px red;
+}
+.homepage .home-data .BookForm .form .btn {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
