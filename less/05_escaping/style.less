@@ -1,0 +1,25 @@
+// create an escaping
+@max576  :~"(max-width:576px)";
+@min576  :~"(min-width:576px)";
+@min768  :~"(min-width:768px)";
+@min992  :~"(min-width:992px)";
+@min1200 :~"(min-width:1200px)";
+@min1400 :~"(min-width:1400px)";
+
+.mydiv {
+    background-color: navy;
+    color           : white;
+    padding         : 20px;
+
+    @media @max576 {
+        background-color: maroon;
+    }
+
+    @media @min576 {
+        background-color: cadetblue;
+    }
+
+    @media @min768 {
+        background-color: slateblue;
+    }
+}

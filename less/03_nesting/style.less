@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+.card {
+    width   : 500px;
+    border  : 2px solid black;
+    margin  : 90px auto;
+    position: relative;
+
+    img {
+        width         : 500px;
+        vertical-align: middle;
+    }
+
+    .card-text {
+        position: absolute;
+        bottom  : 0;
+        width   : 100%;
+        padding : 20px 0;
+        background-color: #ffffff80;
+        transform       : rotateX(90deg);
+        transition      : 0.5s ease;
+        transform-origin: bottom;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    &:hover .card-text {
+        transform: rotateX(0deg);
+    }
+}

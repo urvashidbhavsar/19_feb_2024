@@ -1,0 +1,19 @@
+// create mixins
+.boxdiv(@bg: navy) {
+    width           : 300px;
+    padding         : 20px;
+    border          : 2px solid black;
+    color           : white;
+    margin          : 10px;
+    background-color: @bg
+}
+
+.mydiv {
+    // use mixins
+    .boxdiv(red);
+}
+
+.mydiv1 {
+    // use mixins
+    .boxdiv(magenta);
+}
