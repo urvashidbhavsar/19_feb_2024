@@ -1,0 +1,17 @@
+@color   : blue;
+@padding : 20px;
+
+.mydiv {
+    // block scope
+    @color : red;
+
+    h1 {
+        color: @color
+    }
+
+    color: @color;
+}
+
+.mydiv1 {
+    color: @color;
+}

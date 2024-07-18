@@ -1,0 +1,81 @@
+@import "bunch.less";
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin   : auto;
+    max-width: 1100px;
+}
+
+.cardEx {
+    .grid {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap                  : 30px;
+        padding              : @p-5 0;
+
+        .card {
+
+            .overlay {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    max-width     : 100%;
+                    height        : auto;
+                    vertical-align: middle
+                }
+
+                .over-text {
+                    .positions();
+                    position     : absolute;
+                    display      : grid;
+                    place-content: center;
+                    transition   : 0.5s ease background-color;
+
+                    h3 {
+                        transform : translateY(300px);
+                        transition: 0.5s ease;
+
+                        a {
+                            color: @white;
+                        }
+                    }
+                }
+
+                &:hover .over-text {
+                    background-color: rgba(@green, 0.7);
+                }
+
+                &:hover h3 {
+                    transform: translateY(0);
+                }
+            }
+
+            .text {
+                text-align: center;
+                padding   : @p-2;
+
+                h3 {
+                    font-size: 22px;
+
+                    a {
+                        color: rgba(@green, 1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    display: flex;
+    gap    : 30px;
+}
+
+#bundle() {
+    .btn(@bg) {
+        padding         : 15px 30px;
+        font-size       : 17px;
+        border          : 2px solid transparent;
+        background-color: rgba(@bg, 0.7);
+        transition      : 0.3s ease background-color;
+
+        &:hover {
+            background-color: rgba(@bg, 1);
+            color           : white;
+            border          : 2px solid rgba(@bg, 1);
+        }
+    }
+
+    .div {
+        width  : 400px;
+        padding: 20px;
+        border : 2px solid black;
+    }
+}
+
+.btn1 {
+    #bundle.btn(#ff2d9b);
+}
+
+.btn2 {
+    #bundle.btn(#12aabb);
+}
+
+.mydiv {
+    #bundle.div();
+}
